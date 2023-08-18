@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Add Card Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_margin="15dp"
+        android:hint="Card Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/cardHolderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_margin="15dp"
+        android:hint="Card Holder Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/expirationEditText"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_margin="15dp"
+        android:hint="Expiration Date (MM/YY)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/cvvEditText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:hint="CVV"
+        android:inputType="number"
+        android:maxEms="3" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Card Details" />
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="77dp"
+        android:layout_margin="10dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Total Amount :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:text="50 Points"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="362dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#028080"
+        android:text="Pay"
+        android:textColorHighlight="#009688"
+        android:textColorHint="#009688"
+        android:textColorLink="#009688"
+        app:iconTint="#009688" />
+
+
+</LinearLayout>

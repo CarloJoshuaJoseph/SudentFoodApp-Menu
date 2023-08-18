@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ClientSignUpActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="413dp"
+        android:layout_height="265dp"
+        android:background="@drawable/logo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/client_signup_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Client Sign Up:"
+            android:textColor="#028080"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/client_signup_email"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_border"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/client_signup_password"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_border"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/client_signup_confirm"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_border"
+            android:drawablePadding="8dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/client_signup_button"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#028080"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/client_signup_redirectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:text="Already an user? Login"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp"
+            android:onClick="goToClientLoginPage"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

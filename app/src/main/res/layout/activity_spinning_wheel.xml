@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageWheel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_wheel"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSpin"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cornerRadius="40dp"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        android:text="SPIN"
+        app:layout_constraintBottom_toBottomOf="@+id/imageWheel"
+        app:layout_constraintEnd_toEndOf="@+id/imageWheel"
+        app:layout_constraintStart_toStartOf="@+id/imageWheel"
+        app:layout_constraintTop_toTopOf="@+id/imageWheel" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="235dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageWheel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

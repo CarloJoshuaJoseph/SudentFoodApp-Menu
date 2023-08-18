@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LandingPage">
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="381dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Welcome!"
+            android:textAlignment="center"
+            android:textColor="#028080"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="394dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/logo_splash"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="392dp"
+        android:layout_height="247dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973">
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#028080"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            app:cornerRadius="30dp" />
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#028080"
+            android:text="Sign In"
+            android:textSize="18sp"
+            app:cornerRadius="30dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
